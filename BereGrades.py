@@ -78,17 +78,17 @@ def main():
     [4] - View Student Grades
     [5] - Exit
     """)
-    action = input('What would you Like to Do?(enter a number): ')
+    act = input('What would you Like to Do?(enter a number): ')
 
-    if action == '1':
+    if act == '1':
         enterNew()
-    elif action =='2':
+    elif act =='2':
         enterGrades()
-    elif action =='3':
+    elif act =='3':
         rmvStudent()
-    elif action =='4':
+    elif act =='4':
         view_grades()
-    elif action == '5':                 #this line exits the program (by selecting option )
+    elif act == '5':                 #this line exits the program (by selecting option )
         a = input("Are you sure you want to exit? Y/n? ").lower()
         if a == 'y':
             exit()
