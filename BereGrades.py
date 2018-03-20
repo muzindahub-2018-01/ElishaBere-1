@@ -1,7 +1,7 @@
 # admins dictionary has my login credentials ...pliz use them to access the programwhen you run it
 admins = { 'Ras':'Bere',
            'Py':'6666',
-           'Emmuel':'1592'}
+           'Emmanuel':'1092'}
 studentDict = {'Jeff':[65,25,15],
                'Elisha':[100,100,85],
                'Bere': [52,80]}
