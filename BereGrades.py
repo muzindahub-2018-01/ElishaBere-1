@@ -34,6 +34,7 @@ def enterGrades():
             zita = input('Student Name: ').title()
             mark = input('Grade: ')
             studentDict[zita] = mark
+            print()
             print("###################################")
             print(zita, 'Has been added ')
             print("###################################")
