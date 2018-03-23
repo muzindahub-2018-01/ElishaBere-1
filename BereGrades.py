@@ -34,7 +34,9 @@ def enterGrades():
             zita = input('Student Name: ').title()
             mark = input('Grade: ')
             studentDict[zita] = mark
+            print("###################################")
             print(zita, 'Has been added ')
+            print("###################################")
             view_grades()
         else:
             print()
@@ -61,6 +63,7 @@ def rmvStudent():
         print('Student does not exist')
 
 def view_grades():
+    print()
     for k,v in studentDict.items():         #chex all students in dict
         print()
         print("{} has {} % ".format(k,v))
@@ -71,24 +74,23 @@ def main():
     print("""
              
       Welcome to BERE School Manangement Sytem(SMS)
-
     [1] - Enter New Student
     [2] - Update Grades
     [3] - Remove Student
     [4] - View Student Grades
     [5] - Exit
     """)
-    action = input('What would you Like to Do?(enter a number): ')
+    act = input('What would you Like to Do?(enter a number): ')
 
-    if action == '1':
+    if act == '1':
         enterNew()
-    elif action =='2':
+    elif act =='2':
         enterGrades()
-    elif action =='3':
+    elif act =='3':
         rmvStudent()
-    elif action =='4':
+    elif act =='4':
         view_grades()
-    elif action == '5':                 #this line exits the program (by selecting option )
+    elif act == '5':                 #this line exits the program (by selecting option )
         a = input("Are you sure you want to exit? Y/n? ").lower()
         if a == 'y':
             exit()
@@ -105,7 +107,6 @@ def login():
           +                                               +
           + made  by: Elisha Bere                         +
           *************************************************
-
           """)
     print()
     login = input('Username: ').title()
